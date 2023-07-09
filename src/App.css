@@ -1,38 +1,106 @@
-.App {
+#header {
+  background-color: black;
+  color: lightgreen;
+}
+
+/* user side css*/
+#userchoice {
+  border: 5px solid black;
+  height: 400px;
+}
+
+.video-icon-wrap {
+  font-family: FedraSerifAStdBook;
+  font-size: 16px;
+  text-align: right;
+  color: #676055;
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+
+.video-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+}
+.video-icon-text {
+  display: inline-block;
+  padding-right: 8px;
+}
+#usercol {
+  border: 1px solid black;
+  height: 300px;
+}
+#choice {
+  border: 1px solid black;
+  height: 100px;
+}
+
+.heading {
+  font-family: FedraSerifAStdBook;
+  font-size: 20px;
+}
+
+.date {
+  width: 50%;
+  float: left;
+}
+
+.share-icon-wrap {
+  width: 50%;
+}
+.share-icon {
+  float: right;
+}
+
+#choice > button {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  height: 50px;
+  width: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* scoreboard css*/
+
+#scoreboard {
+  border: 5px solid black;
+  height: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* computer side css*/
+
+#computerchoice {
+  border: 5px solid black;
+  height: 400px;
+}
+
+/* commentary section */
+#commentary {
+  border: 5px solid black;
+  height: 90px;
+  text-align: center;
+}
+
+/* achievement */
+
+#achievement {
+  color: lightgreen;
+  animation: change 1s linear infinite;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  left: 40%;
+}
+
+@keyframes change {
+  0% {
+    color: lightgreen;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+    color: orangered;
   }
 }
